@@ -10,49 +10,57 @@ lang: es
 </div>
 <div class="row">
   <h2 class="subtitle pink">Teléfonos de Emergencia</h2>
-  En estos momentos cualquier reporte puede marcar la diferencia. Reporta fugas de gas y agua, personas desaparecidas, incendios, entre otros.
+  En estos momentos cualquier reporte puede marcar la diferencia. Reporta fugas de gas y agua, personas
+  desaparecidas, incendios, entre otros, a los teléfonos de emergencia de tu ciudad:
 </div>
-<div class="row">
-  <div class="column one-half">
-    <h3>Ciudad de México</h3>
 
+<div class="column">
+     <a class="btn" id="shownear-list">
+       Mostrar Teléfonos de mi entidad
+     </a>
+     <a class="btn" id="showfull-list">
+       Mostrar Teléfonos de otras entidades
+     </a>
+</div>
+<br>
+<br>
+<div class="row emergency-phones">
+  <div class="column one-half cdmx">
+    <h3 id="cdmx">Ciudad de México</h3>
     {% include phoneList.html phoneList=site.data.emergencyPhones.ciudadDeMexico language="es" %}
   </div>
-  <div class="column one-half">
+  <div class="column one-half edo">
     <h3>Estado de México</h3>
-
     {% include phoneList.html phoneList=site.data.emergencyPhones.estadoDeMexico language="es" %}
   </div>
 </div>
 <div class="row">
-  <div class="column one-half">
+  <div class="column one-half mor">
     <h3>Morelos</h3>
-
     {% include phoneList.html phoneList=site.data.emergencyPhones.morelos language="es" %}
   </div>
-  <div class="column one-half">
+  <div class="column one-half pue">
     <h3>Puebla</h3>
-
     {% include phoneList.html phoneList=site.data.emergencyPhones.puebla language="es" %}
   </div>
 </div>
-<div class="row">
-  <div class="column one-half">
+<div class="row ">
+  <div class="column one-half quer">
     <h3>Querétaro</h3>
-
     {% include phoneList.html phoneList=site.data.emergencyPhones.queretaro language="es" %}
   </div>
-  <div class="column one-half">
+  <div class="column one-half oax">
     <h3>Oaxaca</h3>
-
     {% include phoneList.html phoneList=site.data.emergencyPhones.oaxaca language="es" %}
   </div>
 </div>
 
 <div class="row">
+  <hr class="section-line">
 	<h2 class="subtitle pink">Estoy buscando a Alguien</h2>
 	<div class="icontain">
-		<a class="btn" href="https://google.org/personfinder/2017-puebla-mexico-earthquake" target="_blank" rel="noopener noreferrer">Google Person Finder</a>
+		<a class="btn" href="https://google.org/personfinder/2017-puebla-mexico-earthquake"
+       target="_blank" rel="noopener noreferrer">Google Person Finder</a>
 		<br>
 		<br>
 		<a class="btn" href="#" id="rescued-sheet-container-btn">Mostrar lista de rescatados</a>
@@ -62,13 +70,13 @@ lang: es
 	<div id="rescued-sheet-container"></div>
 </div>
 <div class="row">
-    <hr class="section-line">
-		<h2 class="subtitle pink">Busco albergues o centros de ayuda</h2>
-		<div class="icontain">
-			<div id="critical-zones-container">
-				<a class="btn " id="critical-zones-btn">Mostrar mapa</a>
-			</div>
-		</div>
+  <hr class="section-line">
+  <h2 class="subtitle pink">Busco albergues o centros de ayuda</h2>
+  <div class="icontain">
+    <div id="critical-zones-container">
+      <a class="btn" id="critical-zones-btn">Mostrar mapa</a>
+    </div>
+  </div>
 </div>
 <div class="row" id="reports-sheet-container">
   <hr class="section-line">
@@ -80,7 +88,7 @@ lang: es
   <div class="one-half column">
 		<h2 class="subtitle pink">Otros sitios de ayuda</h2>
 		+ Guía de Emergencia<br>
-		<a target="_blank" rel="noopener noreferrer" href="http://www.guiaemergencias.com/">http://www.guiaemergencias.com/</a> <br>
+		<a target="_blank" rel="noopener noreferrer" href="http://www.guiaemergencias.com/">http://www.guiaemergencias.com/</a><br>
 		+ Sismo México | Información y ligas del sismo de Septiembre 19, 2017<br>
 		<a target="_blank" rel="noopener noreferrer" href="https://pliny-sismo-mx.firebaseapp.com">https://pliny-sismo-mx.firebaseapp.com</a><br>
 		+ SISMOMX<br>
@@ -89,11 +97,11 @@ lang: es
 
 	<div class="one-half column">
 		<h2 class="subtitle pink">Asesoría Jurídica</h2>
-		<p>  En <a href="http://www.pequenocerdocapitalista.com/guia-reclamar-seguros-terremoto/" target="_blank"><strong>Pequeño cerdo capitalista</strong></a> crearon una <a href="https://www.dropbox.com/s/pedizh9i2jivh3c/Guía%20para%20reclamar%20seguros%20por%20terremoto%20%202017.09.22.pdf?dl=1" target="_blank">guía colaborativa para reclamar seguros por terremoto</a>.
+		<p>En <a href="http://www.pequenocerdocapitalista.com/guia-reclamar-seguros-terremoto/" target="_blank"><strong>Pequeño cerdo capitalista</strong></a> crearon una <a href="https://www.dropbox.com/s/pedizh9i2jivh3c/Guía%20para%20reclamar%20seguros%20por%20terremoto%20%202017.09.22.pdf?dl=1" target="_blank">guía colaborativa para reclamar seguros por terremoto</a>.
 		</p>
 		<p> La <strong>Red Pro Bono de México,</strong> brigadas jurídicas para las personas afectadas.</p>
     <p> Llenar formato en <a href="http://www.appleseedmexico.org/ong-2" rel="noopener noreferrer" target="_blank">http://www.appleseedmexico.org/ong-2</a><br>
-			Tel: <a href="tel:75839623">75839623</a>, Whatsapp: 5530474513<br>
+			Teléfono: <a href="tel:75839623">7583 9623</a>, WhatsApp: <a href="tel:5530474513">55 3047 4513</a> <br>
       Correo: <a href="mailto:mvazquez@appleseedmexico.org">mvazquez@appleseedmexico.org</a>
 		</p>
 	</div>
